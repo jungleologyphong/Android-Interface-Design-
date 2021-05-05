@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:layout_constraintCircleRadius="@dimen/material_emphasis_high_type"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="400dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="475dp"
+        app:srcCompat="@drawable/bg_add" />
+    <View
+        android:id="@+id/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:background="#FFFFFF"></View>
+
+    <EditText
+        android:background="@drawable/bg_button_rounded_copy"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/darker_gray"
+        android:id="@+id/enterTieuDe"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên loại chi"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="15dp"
+        android:padding="12dp"/>
+
+    <Button
+        android:background="@drawable/bg_button_rounded_copy"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/enterTieuDe"
+        android:id="@+id/enterDate"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:hint="DD/MM/YY"
+        android:textAlignment="textStart"
+        android:inputType="text"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="15dp"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:background="@drawable/bg_button_rounded_copy"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/enterDate"
+        android:id="@+id/enterTien"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Tiền"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="15dp"
+        android:padding="12sp"/>
+
+    <EditText
+        android:background="@drawable/bg_button_rounded_copy"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/enterTien"
+        android:id="@+id/enterMoTa"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Mô Tả"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="15dp"
+        android:padding="12dp"/>
+    <Spinner
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/enterMoTa"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"></Spinner>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:background="#FFFFFF"
+            android:id="@+id/btnAddKT"
+            android:layout_marginLeft="95dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="LƯU"></Button>
+        <Button
+            android:textSize="20sp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/btnCan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HỦY"></Button>
+    </LinearLayout>
+
+</RelativeLayout>

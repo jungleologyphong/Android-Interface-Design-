@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="400dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="255dp"
+        app:srcCompat="@drawable/bg_add" />
+
+    <View
+        android:id="@+id/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:background="#FFFFFF"/>
+
+    <EditText
+        android:background="@drawable/bg_button_rounded_copy"
+        android:layout_marginStart="15dp"
+        android:id="@+id/enterKhoanThu"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/darker_gray"
+        android:hint="Nhập khoản thu"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_marginEnd="8dp"
+        android:padding="12dp"/>
+
+    <EditText
+        android:background="@drawable/bg_button_rounded_copy"
+        android:layout_marginStart="15dp"
+        android:id="@+id/enterTT"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Thu"
+        android:layout_below="@+id/enterKhoanThu"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_marginEnd="8dp"
+        android:padding="12dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterTT"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:textSize="20sp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="95dp"
+            android:id="@+id/btnAddKT"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textStyle="bold"
+            android:text="Lưu"></Button>
+        <Button
+            android:textSize="20sp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/btnCan"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textStyle="bold"
+            android:text="HỦY"></Button>
+    </LinearLayout>
+</RelativeLayout>

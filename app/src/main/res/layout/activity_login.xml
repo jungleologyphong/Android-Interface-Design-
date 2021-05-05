@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+    //Background
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2196F3"
+        app:srcCompat="@drawable/backgrd" />
+
+    //Button Login
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="305dp"
+        android:background="#2196F3"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+    //Button Register
+    <Button
+        android:id="@+id/btnRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20px"
+        android:background="#2196F3"
+        android:text="REGISTER"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+    //Username
+    <EditText
+        android:id="@+id/edtUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="250dp"
+        android:ems="10"
+        android:hint="Enter the Username"
+        android:inputType="textPersonName" />
+    //Password
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUser"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter the Password"
+        android:inputType="textPassword" />
+    //LOGIN MANAGER
+    <TextView
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="200dp"
+        android:hint="LOGIN MANAGER"
+        android:textSize="25dp" />
+
+    //Button Sign in
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRemember"
+        android:layout_marginLeft="195dp"
+        android:background="#2196F3"
+        android:text="SIGN IN"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="55dp"
+        android:textSize="25dp" />
+    //Remember Password
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </CheckBox>
+    <TextView
+        android:layout_toRightOf="@+id/checkbox"
+        android:id="@+id/txtRemember"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"
+        android:layout_marginTop="25dp"
+        android:text="Remember Me ?"
+        android:textSize="15dp" />
+    //Image Person
+</RelativeLayout>

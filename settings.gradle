@@ -1,0 +1,2 @@
+rootProject.name='PS11601 - PhongDTN - ASM'
+include ':app'

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Register"
+    android:background="#2196F3">
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/backgrre" />
+    //Button Login
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="315dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:text="LOGIN" />
+    //Button Register
+    <Button
+        android:id="@+id/btnRe"
+        android:layout_below="@id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:background="#2196F3" />
+    //TextView Re-Manager
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="175dp"
+        android:text="Re - Manager">
+    </TextView>
+    //Enter the Username
+    <EditText
+        android:id="@+id/txtUsernameRe"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="150dp"
+        android:textColor="#000000"
+        android:hint="Re - Enter the Username"
+        ></EditText>
+    //Enter the Password
+    <EditText
+        android:id="@+id/txtPassWordRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/txtUsernameRe"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:hint="Enter Password"
+        android:textColor="#000000"
+        android:inputType="textPassword" />
+    //Confirm Password
+    <EditText
+        android:id="@+id/txtPassWordComfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/txtPassWordRe"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:hint="Enter Comfirm Password "
+        android:textColor="#000000"
+        android:inputType="textPassword" />
+    //Image Register Manager
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="182dp"
+        android:layout_height="164dp"
+        android:layout_marginLeft="200dp"></ImageView>
+    //Button Register
+    <Button
+        android:id="@+id/DangKi"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/txtPassWordComfirm"></Button>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPassWordComfirm"
+        android:layout_marginLeft="150dp"
+        android:ems="10"
+        android:textColor="#000000"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:hint="Email" />
+
+
+</RelativeLayout>

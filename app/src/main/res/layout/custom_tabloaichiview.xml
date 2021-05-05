@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#2196F3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="#2196F3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="15dp"
+                android:id="@+id/maGiaoDich"
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:padding="15dp"
+                android:id="@+id/tenKhoanThu"
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:height="55dp"
+                android:textSize="18sp"/>
+            <ImageView
+                android:paddingLeft="10dp"
+                android:id="@+id/imgEdit"
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+                android:textSize="18sp"
+                android:src="@drawable/ic_edit"></ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="15dp"
+                android:id="@+id/Ngay"
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:background="#FFFFFF"
+                android:textSize="18sp"
+                android:textColor="#000000"></TextView>
+
+            <TextView
+                android:padding="15dp"
+                android:id="@+id/Tien"
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:textSize="18sp"
+                android:height="55dp"/>
+
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="68dp"
+                android:layout_height="55dp"
+                android:textSize="18sp"
+                android:src="@drawable/ic_delete"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
